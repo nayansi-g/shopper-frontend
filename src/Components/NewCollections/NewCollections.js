@@ -7,7 +7,7 @@ const NewCollections = ({ refProp }) => {
   const [newCollection, setNewCollection] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:4000/newcollectioned').then(res => res.json()).then(data => setNewCollection(data)).catch(err => console.log(err))
+    fetch('https://shopper-ecommerce-55781390a868.herokuapp.com/newcollectioned').then(res => res.json()).then(data => setNewCollection(data)).catch(err => console.log(err))
   }, [])
 
 

@@ -8,7 +8,7 @@ const Popular = () => {
     const [popularItems, setPopularItems] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:4000/allproducts?type=top_collection&filter=women&count=4").then(res => res.json()).then(data => setPopularItems(data)).catch(err => console.log(err))
+        fetch("https://shopper-ecommerce-55781390a868.herokuapp.com/allproducts?type=top_collection&filter=women&count=4").then(res => res.json()).then(data => setPopularItems(data)).catch(err => console.log(err))
     }, [])
 
     return <div className="popular">

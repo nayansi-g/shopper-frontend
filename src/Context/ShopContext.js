@@ -15,7 +15,7 @@ const ShopContextProvider = (props) => {
      const [cartItems, setCartItems] = useState(getDefaultCart());
 
      useEffect(() => {
-          fetch("http://localhost:4000/allproducts")
+          fetch("https://shopper-ecommerce-55781390a868.herokuapp.com/allproducts")
                .then((res) => res.json()).then((data) => setAll_Product(data))
      }, [])
 

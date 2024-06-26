@@ -10,7 +10,7 @@ const NewsLetter = () => {
         let bodyEl = JSON.stringify({ email: email.current.value });
         console.log(email.current.value);
         if (email !== '') {
-            fetch("http://localhost:4000/send_welcome_email", {
+            fetch("https://shopper-ecommerce-55781390a868.herokuapp.com/send_welcome_email", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
